@@ -100,7 +100,7 @@ The following pieces of configuration (or puppet modules) are included:
 
 Both emacs and vim works as is from the terminal. Packages and
 configuration for remote X usage are also provided. (emacs and urxvt,
-but current no vim)
+but currently no vim)
 
 For X forwarding do
 
