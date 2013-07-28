@@ -7,4 +7,17 @@ environment based on ubuntu.
 
 The base image should contain `puppet`. (TODO: which versions are supported?)
 
+# Installation
+
+## Via Vagrant
+
+Simply do:
+
+```bash
+vagrant up
+```
+
+
+
+
 
