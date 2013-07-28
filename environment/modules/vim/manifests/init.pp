@@ -138,8 +138,6 @@ class vim ($user) {
   }
     
 
-  # TODO: molokai
-
   # https://github.com/msanders/snipmate.vim -- just in case 
     
 }

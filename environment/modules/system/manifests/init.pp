@@ -7,6 +7,7 @@ class system($user) {
   package { "htop": ensure => installed;}
   package { 'git': ensure => installed }
   package { 'mercurial': ensure => present }
+  package { 'subversion': ensure => present }
   package { 'darcs': ensure => installed }
   
   file { "/etc/default/locale":

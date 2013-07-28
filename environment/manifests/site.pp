@@ -12,42 +12,4 @@ exec { "apt-get-update" :
 
 group { "puppet": ensure => "present" }
 
-node triton {
-
-  $mainUser = 'vagrant'
-
-  class { 'timezone':
-    region => "Europe",
-    locality => "Copenhagen",
-  }
-
-  # Rem tmux -u (unicode)
-  class { 'tmux':
-  }
-
-  class { 'emacs':
-    user => $mainUser,
-  }
-
-  zsh::install { $mainUser:
-  }
-
-  class { 'system':
-    user => $mainUser,
-  }
-
-  class { 'mongrel2':
-    user => $mainUser,
-  }
-
-  class { 'vim':
-    user => $mainUser,
-  }
-
-  class { 'haskell':
-  }
-  
-  class { 'mono':
-  }
-
-}
+import 'nodes/*.pp'
